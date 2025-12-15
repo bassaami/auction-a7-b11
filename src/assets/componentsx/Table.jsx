@@ -42,15 +42,15 @@ console.log(table)
               </div>
             </div>
             <div>
-              <div className="font-bold">Hart Hagerty</div>
-              <div className="text-sm opacity-50">United States</div>
+              <div className="font-bold">First Edition: The Hobbit</div>
+              {/* <div className="text-sm opacity-50">United States</div> */}
             </div>
           </div>
         </td>
         <td>
           Zemlak, Daniel and Leannon
           <br />
-          <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+          {/* <span className="badge badge-ghost badge-sm">Desktop Support Technician</span> */}
         </td>
         <td>Purple</td>
         <th>
