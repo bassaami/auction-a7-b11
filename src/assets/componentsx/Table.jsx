@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Irow from './Irow';
 
-const Table = () => {
+const Table = ({handleBookmk}) => {
 
 const [table, setTable] = useState([])
 
@@ -11,7 +11,7 @@ const [table, setTable] = useState([])
 .then(data => setTable(data))
   }, [])
 
-console.log(table)
+// console.log(table)
 
     return (
         <div>
@@ -37,22 +37,18 @@ console.log(table)
             <div className="avatar">
               <div className="mask mask-squircle h-12 w-12">
                 <img
-                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                  src="https://i.ibb.co/vvTfkcv/1.jpg"
                   alt="Avatar Tailwind CSS Component" />
               </div>
             </div>
             <div>
               <div className="font-bold">First Edition: The Hobbit</div>
-              {/* <div className="text-sm opacity-50">United States</div> */}
+              
             </div>
           </div>
         </td>
-        <td>
-          Zemlak, Daniel and Leannon
-          <br />
-          {/* <span className="badge badge-ghost badge-sm">Desktop Support Technician</span> */}
-        </td>
-        <td>Purple</td>
+        <td> 2500.00 </td>
+        <td>7d 0h 0m</td>
         <th>
           <label>
             <input type="checkbox" className="checkbox" />
@@ -61,7 +57,7 @@ console.log(table)
       </tr>
       
       {
-        table.map((item) => <Irow itrow={item} key={item.id} ></Irow>)
+        table.map((item) => <Irow handleBookmk={handleBookmk} itrow={item} key={item.id} ></Irow>)
       }
       {/* <Irow></Irow>
       <Irow></Irow> */}

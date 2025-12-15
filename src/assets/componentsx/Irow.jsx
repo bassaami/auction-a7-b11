@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Irow = ({itrow}) => {
-// console.log(itrow)
+const Irow = ({itrow, handleBookmk}) => {
+console.log(handleBookmk)
     return (
         
 <tr>
@@ -22,14 +22,13 @@ const Irow = ({itrow}) => {
           </div>
         </td>
         <td>
-          Zemlak, Daniel and Leannon
-          <br />
-          
+      {itrow.currentBidPrice}
         </td>
-        <td>2d 4h 30m</td>
+        <td>{itrow.timeLeft}</td>
   <th>
           <label>
-            <input type="checkbox" className="checkbox" />
+            {/* <button onClick={()=> handleBookmk(itrow) } className="checkbox" ></button> */}
+            <input onClick={()=> handleBookmk(itrow) } type="checkbox" className="checkbox" />
           </label>
         </th>      
       </tr>
