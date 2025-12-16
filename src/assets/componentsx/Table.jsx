@@ -20,26 +20,18 @@ console.log(table)
     {/* head */}
     <thead>
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
+        
         <th>Items {table.length} </th>
         <th>Current Bid</th>
         <th>Time Left</th>
         <th>Bid Now</th>
-        <th></th>
+        
       </tr>
     </thead>
     <tbody>
       {/* row 1 */}
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
+        
         <td>
           <div className="flex items-center gap-3">
             <div className="avatar">
@@ -62,10 +54,17 @@ console.log(table)
         </td>
         <td>Purple</td>
         <th>
-          <button className="btn btn-ghost btn-xs">details</button>
+          <label>
+            <input type="checkbox" className="checkbox" />
+          </label>
         </th>
       </tr>
       {/* row 2 */}
+      <Irow></Irow>
+      <Irow></Irow>
+      <Irow></Irow>
+      <Irow></Irow>
+      <Irow></Irow>
       <Irow></Irow>
     </tbody>
     {/* foot */}
