@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Irow = ({itrow, handleBookmk}) => {
+const Irow = ({itrow,  handleBookmk}) => {
 console.log(handleBookmk)
     return (
         
@@ -28,7 +28,7 @@ console.log(handleBookmk)
   <th>
           <label>
             {/* <button onClick={()=> handleBookmk(itrow) } className="checkbox" ></button> */}
-            <input onClick={()=> handleBookmk(itrow) } type="checkbox" className="checkbox" />
+            <input  onChange={()=> handleBookmk(itrow) }  type="checkbox" className="checkbox" />
           </label>
         </th>      
       </tr>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Irow from './Irow';
 
-const Table = ({handleBookmk}) => {
+const Table = ({showAlert,  handleBookmk}) => {
 
 const [table, setTable] = useState([])
 
@@ -57,7 +57,7 @@ const [table, setTable] = useState([])
       </tr>
       
       {
-        table.map((item) => <Irow handleBookmk={handleBookmk} itrow={item} key={item.id} ></Irow>)
+        table.map((item) => <Irow  showAlert={showAlert} handleBookmk={handleBookmk} itrow={item} key={item.id} ></Irow>)
       }
       {/* <Irow></Irow>
       <Irow></Irow> */}
