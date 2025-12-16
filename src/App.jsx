@@ -12,11 +12,10 @@ function App() {
     const isAlreadyAdded = bkmark.some((item) => item.id === itrow.id);
     if (!isAlreadyAdded) {
       setBookmr([...bkmark, itrow]);
-    } else {
       // 2. Show the alert and set a timer to hide it
       setShowAlert(true);
       setTimeout(() => setShowAlert(false), 3000); // Hides after 3 seconds
-    }
+    }  
   }
 
   const handleRemove = (id) => {
@@ -36,17 +35,17 @@ function App() {
       {showAlert && (
         <div className="toast toast-top toast-end z-50">
           <div className="alert alert-warning">
-            <span>Item already in favorites!</span>
+            <span>Item added in favorites!</span>
           </div>
         </div>
       )}
-      
-      <h1 className='text-4xl mx-15 mt-9'>bismillah</h1>
+
+      <h1 className='text-4xl mx-15 mt-9'>Auction Gallery</h1>
       <h5 className='mx-15'>Discover & Bid on Extraordinary items</h5>
       
       <div className="flex m-15 main-part">
         <div className="tablex w-[70%]">
-          <Table  showAlert={showAlert} handleBookmk={handleBookmk} ></Table>
+          <Table bkmark={bkmark}  showAlert={showAlert} handleBookmk={handleBookmk} ></Table>
         </div>
 
         <div className="notifix border rounded-2xl mx-5 text-center bg-gray-700 w-[30%] flex flex-col">

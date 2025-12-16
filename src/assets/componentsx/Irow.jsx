@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Irow = ({itrow,  handleBookmk}) => {
+const Irow = ({itrow, bkmark, handleBookmk}) => {
 console.log(handleBookmk)
+
+const isAlreadyInFavorites = bkmark.some((item) => item.id === itrow.id);
     return (
         
 <tr>
@@ -28,7 +30,7 @@ console.log(handleBookmk)
   <th>
           <label>
             {/* <button onClick={()=> handleBookmk(itrow) } className="checkbox" ></button> */}
-            <input  onChange={()=> handleBookmk(itrow) }  type="checkbox" className="checkbox" />
+            <input checked={isAlreadyInFavorites} onChange={()=> !isAlreadyInFavorites && handleBookmk(itrow) }  type="checkbox" className="checkbox" />
           </label>
         </th>      
       </tr>
