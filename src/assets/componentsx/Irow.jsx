@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Irow = () => {
+const Irow = ({itrow}) => {
+// console.log(itrow)
     return (
         
 <tr>
@@ -10,12 +11,12 @@ const Irow = () => {
             <div className="avatar">
               <div className="mask mask-squircle h-12 w-12">
                 <img
-                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                  src={itrow.image}
                   alt="Avatar Tailwind CSS Component" />
               </div>
             </div>
             <div>
-              <div className="font-bold">Hart Hagerty</div>
+              <div className="font-bold">{itrow.title} </div>
               
             </div>
           </div>

@@ -59,13 +59,13 @@ console.log(table)
           </label>
         </th>
       </tr>
-      {/* row 2 */}
-      <Irow></Irow>
-      <Irow></Irow>
-      <Irow></Irow>
-      <Irow></Irow>
-      <Irow></Irow>
-      <Irow></Irow>
+      
+      {
+        table.map((item) => <Irow itrow={item} key={item.id} ></Irow>)
+      }
+      {/* <Irow></Irow>
+      <Irow></Irow> */}
+      
     </tbody>
     {/* foot */}
     
