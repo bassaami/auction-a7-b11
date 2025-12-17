@@ -19,15 +19,15 @@ const Bannerr = () => {
 
                 {/* 3. Text content goes inside card-body, which overlays the image */}
                 <div className="card-body justify-center">
-                    <div className="card-title w-[60%] text-5xl font-bold text-blue-300 mb-8">
-                        Bid on Unique Items <br /> from <span className="text-amber-400">Around the World</span>
+                    <div className="card-title w-[60%] text-5xl font-bold text-blue-100 my-8">
+                        Bid on Unique Items <br /> from Around the World
                     </div>
                     <p className="text-gray-300 text-xl max-w-2xl">
                         Experience the thrill of cutting-edge design and performance.
                         Join our exclusive auction and bid on world-class luxury vehicles.
                     </p>
                     <div className="card-actions justify-start mt-2">
-                        <button className="btn mb-15 bg-amber-400 hover:bg-amber-700 text-black border-none font-bold px-8">
+                        <button className="btn mb-20 bg-amber-50 hover:bg-amber-700 text-black border-none font-bold px-8">
                             Explore Auctions
                         </button>
                     </div>

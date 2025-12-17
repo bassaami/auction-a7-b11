@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbarr from './assets/componentsx/Navbarr';
 import Bannerr from './assets/componentsx/Bannerr';
+import Ffooter from './assets/componentsx/Ffooter';
 
 function App() {
   const [bkmark, setBookmr] = useState([])
@@ -86,7 +87,9 @@ function App() {
             </h3>
           </div>
         </div>
+        
       </div>
+      <Ffooter></Ffooter>
     </>
   )
 }
